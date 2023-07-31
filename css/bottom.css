@@ -1,0 +1,23 @@
+#bottom {
+    background-color: #303030;
+    padding: 40px;
+}
+
+#bottom .center {
+    flex-direction: column;
+}
+
+#bottom .center img {
+    width: 180px;
+    height: 180px;
+}
+
+#bottom .center p {
+    text-align: center;
+    color: white;
+}
+
+#bottom p {
+    margin-bottom: 20px;
+    font-size: 1.15em;
+}

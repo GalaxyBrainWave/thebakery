@@ -1,0 +1,136 @@
+#apropos {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* encore un flex qui permet de réorganiser le positionnement 
+en changeant simplement la direction du flex */
+
+#apropos h3 {
+    margin: 80px 0 30px;
+}
+
+#apropos p {
+    margin: 60px 7vw 15px;
+    text-align: center;
+    line-height: 1.7em;
+    letter-spacing: 0.05em;
+    font-size: 0.9em;
+}
+
+
+/* le grand disque est centré avec du flex, et les deux autres 
+se positionnent par rapport à lui  */
+
+.grandisc {
+    position: relative;
+    margin-top: 150px;
+    margin-bottom: 70vw;
+    max-width: 532px;
+    max-height: 532px;
+    width: 70vw;
+    height: 70vw;
+    border-radius: 50%;
+    border: 15px solid #2cccc4;
+    background-position: top;
+    background-size: 95%;
+    background-image: url('../assets/image11.jpg');
+}
+
+
+/* le petit disque est situé dans le grand au niveau du code html 
+ce qui permet de le positionner par rapport à ce dernier en 
+utilisant un position absolute */
+
+.petidisc {
+    position: absolute;
+    top: 50vw;
+    left: 0;
+    max-width: 290px;
+    max-height: 290px;
+    width: 44vw;
+    height: 44vw;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    background-position: center;
+    box-shadow: 10px 10px 15px #acacac;
+    background-size: 150%;
+    background-image: url('../assets/image9.jpg');
+}
+
+
+/* le disque vert se positionne par rapport au petit disque */
+
+.green_circle2 {
+    position: absolute;
+    top: 35vw;
+    left: 35vw;
+    background-color: #2cccc4;
+    width: 118px;
+    height: 118px;
+    border-radius: 50%;
+}
+
+
+@media screen and (min-width: 400px) {
+    #apropos p {
+        margin: 60px 80px 15px;
+    }
+
+}
+
+
+@media screen and (min-width: 678px)
+{
+    .petidisc
+    {
+        top: 320px;
+        left: -80px;
+    }
+
+    .green_circle2 
+    {
+        top: 250px;
+        left: 250px;
+    }
+
+    .grandisc {
+        margin-bottom: 300px;
+    }
+}
+
+
+
+@media screen and (min-width: 1250px)
+{
+    #apropos {
+
+        flex-direction: row;
+    }
+
+    .center2
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+        width: 100%;
+    }
+
+    #apropos h3
+    {
+        text-align: left;
+    }
+
+    #apropos h2
+    {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    #apropos p {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+}

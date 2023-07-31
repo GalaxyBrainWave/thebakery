@@ -1,0 +1,179 @@
+#contact {
+    padding: 10vw 5vw;
+    position: relative;
+}
+
+
+/* ci-dessous l'image ronde principale qui servira à positionner les 
+deux autres. les dimensions sont en vw pour les petits écrans, 
+puis des max-width permettent de limiter la croissance des objets 
+concernés une fois qu'ils ont atteint leur taille maximale. 
+A ce moment, on bascule également l'unité utilisée pour positionner
+les éléments relativement les uns par rapport aux autres de vw à px.
+On met un position relative pour que les autres images n'aient pas
+de problème à se positionner par rapport à celle-ci.*/
+
+.roundimage {
+    position: relative;
+    width: 71vw;
+    height: 71vw;
+    max-width: 590px;
+    max-height: 590px;
+    border-radius: 50%;
+    background-position: top;
+    background-size: 120%;
+    background-image: url(../assets/image12.jpg);
+    margin-bottom: 100vw;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    letter-spacing: -0.05em;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* la deuxième image est décalée par rapport à la première 
+pour la version mobile, les unités sont en vw pour s'adapter au 
+mieux aux petits écrans. */
+
+.secondaryround {
+    width: 63vw;
+    height: 63vw;
+    max-width: 422px;
+    max-height: 422px;
+    border-radius: 50%;
+    background-position: bottom;
+    background-size: 100%;
+    background-image: url(../assets/image14.jpg);
+    border: solid 9px white;
+    position: absolute;
+    top: 53vw;
+    left: -1vw;
+}
+
+
+/* idem  */
+
+.tertiaryround {
+    width: 47vw;
+    height: 47vw;
+    max-width: 315px;
+    max-height: 315px;
+    border-radius: 50%;
+    background-position: bottom;
+    background-size: 140%;
+    background-image: url(../assets/image13.jpg);
+    border: solid 9px white;
+    position: absolute;
+    top: 45vw;
+    left: -2vw;
+    margin-bottom: 100px;
+}
+
+
+/* ci-dessous le style pour le bouton "envoyer" vert  */
+
+#contact input[type="submit"] {
+    width: 66vw;
+    max-width: 626px;
+    border: none;
+    color: white;
+    background-color: #2cccc4;
+    padding: 15px 50px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 50px;
+    font-size: 1.15em;
+    letter-spacing: 0.05em;
+}
+
+
+/*je ne comprends pas pourquoi la largeur des éléments avec la classe
+ ci-dessous reste bloquée à 321.45px */
+
+.inputstyle {
+    font-size: 1.08em;
+    width: 100%;
+    padding: 0.6em 10vw 0.6em 0.6em;
+    border-radius: 50px;
+    margin-bottom: 30px;
+    /* margin: 5px auto 0; */
+    border: solid 2px #b2b1b1;
+}
+
+.inputstyle:not(:focus) {
+    background-color: #e5e5e5;
+}
+
+#form {
+    padding: 0 20px;
+}
+
+#contact label {
+    font-size: 1.1em;
+}
+
+#hautdimage {
+    margin-bottom: 30vw;
+}
+
+.nom_email
+{
+    max-width: 626px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form_container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (min-width: 400px) {
+    .roundimage {
+        margin-bottom: 400px;
+    }
+}
+
+@media screen and (min-width: 992px)
+{
+    .secondaryround {
+        top: 300px;
+        left: -180px;
+    }
+
+    .tertiaryround {
+        top: 290px;
+        left: 330px;
+    }
+
+    #contact h2 {
+        font-size: 3.5em;
+    }
+
+    #hautdimage {
+        margin-bottom: 0;
+    }
+
+    .nom_email
+    {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 130px;
+    }
+
+    .inputstyle {
+        padding: 0.6em 8em 0.6em 0.6em;
+
+    }
+}

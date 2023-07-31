@@ -1,0 +1,65 @@
+#quotecard {
+    background-image: url('../assets/image15.jpg');
+    background-position: bottom;
+    background-size: 220%;
+    min-height: 57vw;
+    padding: 10vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/* l'alignement à la fin du flex permet de positionner le texte dans le coin 
+en bas à droite, à l'intérieur du padding */
+
+#quotecard h2 {
+    color: white;
+}
+
+#quotecard blockquote {
+    max-width: 500px;
+    margin-top: 30px;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 8px;
+}
+
+#quotecard p {
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+@media screen and (min-width: 992px)
+{
+    .contenu
+    {
+        text-decoration: none;
+    }
+
+    #quotecard {
+        background-position: bottom;
+        background-size: cover;
+        padding: 150px;
+    }
+}
+
+@media screen and (min-width: 1250px)
+{
+    #quotecard h2 {
+        font-size: 3em;
+    }
+
+    #quotecard blockquote
+    {
+        font-size: 1.5em;
+    }
+}

@@ -1,0 +1,144 @@
+#marketingcards {
+    background-color: #2cccc4;
+    padding: 550px 0 150px;
+}
+
+
+.marketingcard_instance_container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.marketingcard_instance {
+    max-width: 355px;
+    width: 71vw;
+    height: auto;
+    min-height: 372px;
+    background-color: white;
+    border-radius: 25px;
+    padding: 7vw;
+    margin: 8px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+}
+
+.marketingcard_header {
+    width: 100%;
+    position: relative;
+}
+
+.marketingcard_icon {
+    position: absolute;
+    top: 2vw;
+    left: -14vw;
+    opacity: 0.8;
+}
+
+.green_circle {
+    position: relative;
+    background-color: #2cccc4;
+    width: 122px;
+    height: 122px;
+    border-radius: 50%;
+}
+
+
+.marketingcard_instance h2 {
+    margin: 15px 0;
+}
+
+.marketingcard_instance p {
+    font-size: 0.95em;
+    text-align: center;
+    color: #808080;
+}
+
+
+#marketingcard_icon1 {
+    transform:   rotate(120deg) scale(0.75);
+    position: absolute;
+    top: 40px;
+    left: -40px;
+}
+
+#marketingcard_icon2 {
+    transform: scale(0.65);
+    position: absolute;
+    top: 40px;
+    left: -40px;
+}
+
+#marketingcard_icon3 {
+    transform: scale(0.65);
+    position: absolute;
+    top: 40px;
+    left: -40px;
+}
+
+#marketingcard_icon4 {
+    transform: scale(0.60);
+    position: absolute;
+    top: 40px;
+    left: -40px;
+}
+
+
+@media screen and (min-width: 513px)
+{
+    #marketingcards {
+        padding-top: 0;
+        padding: 400px 0 100px;
+    }
+}
+
+
+@media screen and (min-width: 768px)
+{
+    .marketingcard_instance_container
+    {
+        flex-direction: row;
+    }
+
+    .marketingcard_instance 
+    {
+        padding: 36px;
+    }
+
+    #test {
+        width: auto;
+        display: flex;
+    }
+    
+    .groupBy2
+    {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #marketingcards {
+        padding-top: 0;
+        padding: 300px 0 100px;
+    }
+}
+
+
+
+@media screen and (min-width: 1250px)
+{
+    .groupBy2
+    {
+        flex-direction: row;
+    }
+
+    .marketingcard_instance
+    {
+        max-width: 257px;
+        min-height: 434px;
+    }
+}

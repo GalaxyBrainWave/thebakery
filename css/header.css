@@ -1,0 +1,109 @@
+#header {
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#menuToggle
+{
+    width: 100px;
+    height:180px;
+    display: block;
+    z-index: 1;
+    user-select: none;
+}
+
+nav {
+    position: static;
+    display: flex;
+}
+
+#menuToggle input
+{
+    position: absolute;
+    top:64px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    opacity: 0; /* hide this */
+    z-index: 3; /* and place it over the hamburger */
+}
+
+.burger_icon {
+    position: absolute;
+    top: 74px;
+    transform: scale(1.2, 1.2);
+    z-index: 2;
+}
+
+#menu
+{
+  position: relative;
+  left: -100px;
+  width: 200px;
+  padding: 40px;
+  padding-top: 100px;
+  /* je cache le menu pour éviter de désorienter l'inspecteur
+  du coup il n'y a plus l'effet slide, mais c'est plus robuste 
+  si on met la ligne suivante en commentaire, le slide fonctionne
+  mais il pourrait y avoir des effets secondaires incontrôlés*/
+  display: none;
+  flex-direction: column;
+  align-items: start;
+  
+  background: #ededed;
+  list-style-type: none;
+
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menuToggle input[type="checkbox"]:checked ~ ul
+{
+    display: flex;
+    transform: none;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #111;
+    padding:8px;
+}
+
+nav li {
+    padding: 15px 0;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    #menuToggle input[type="checkbox"] {
+        display: none;
+    }
+    
+    .burger_icon {
+        display: none;
+    }
+
+    #menu {
+        height: 180px;
+        display: flex;
+        position: relative;
+        transform: none;
+        flex-direction: row-reverse;
+        gap: 50px;
+        width: auto;
+        margin-right: 0;
+        padding-top: 64px;
+        background-color: white;
+     }
+
+    #menu li
+    {
+        min-width: 120px;
+    }
+}

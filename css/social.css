@@ -1,0 +1,56 @@
+#social {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* j'utilise un flex en colonne pour la version mobile pour
+la structure générale de cette section */
+
+#social p {
+    text-align: center;
+}
+
+#social h2 {
+    margin-bottom: 24px;
+    font-size: 1.5em;
+}
+
+.social_icons {
+    margin-top: 20px;
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #2cccc4;
+    margin-bottom: 100px;
+}
+
+.aggrandi {
+    transform: scale(1.5);
+}
+
+
+@media screen and (min-width: 992px)
+{
+
+/* quand l'écran devient suffisamment grand, on change la direction 
+du flex pour faire afficher les éléments côte à côte */
+
+    #social
+    {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .social_icons
+    {
+        width: 30vw;
+    }
+
+    #suiveznous
+    {
+        width: 50vw;
+    }
+}

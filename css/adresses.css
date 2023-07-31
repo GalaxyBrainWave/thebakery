@@ -1,0 +1,43 @@
+#adresses {
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* j'utilise un flex en colonne pour la version mobile pour
+la structure générale de cette section */
+
+.ville {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 20px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.adresse {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.05em;
+}
+
+
+@media screen and (min-width: 678px)
+{
+
+    /* quand l'écran devient suffisamment grand, on change la direction 
+du flex pour faire afficher les éléments côte à côte */
+
+    #adresses
+    {
+        flex-direction: row;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    #adresses article
+    {
+        max-width: 200px;
+    }
+}

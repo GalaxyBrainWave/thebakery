@@ -1,0 +1,129 @@
+#nospains {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+
+/* je n'ai pas réussi à gérer l'overlap des backgrounds derrière
+les objets. Je suis trop fatigué pour continuer à chercher */
+
+.nospains_green {
+    background-color: #2cccc4;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.nospains_card {
+    background-color: white;
+    width: 71vw;
+    max-width: 463px;
+    border-radius: 40px / 20px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+#img4 {
+    max-width: 414px;
+}
+
+#img3 {
+    max-width: 424px;
+}
+
+.nospains_card img {
+    border-radius: 15px;
+    width: 100%;
+}
+
+.nospains_card p {
+    margin-top: 25px;
+    text-align: center;
+    line-height: 2em;
+    letter-spacing: 0.05em;
+}
+
+#apropos p
+{
+    max-width: 500px;
+}
+
+#nospains img {
+    width: 100%;
+    border-radius: 25px;
+    margin: 20px auto;
+    height: 325px;
+    object-fit: cover;
+}
+
+.green_square_button {
+    background-color: #2cccc4;
+    text-align: center;
+    color: white;
+    margin: 50px 0;
+    padding: 20px 4px;
+    width: 80vw;
+    max-width: 416px;
+    font-family: 'Lobster Two', cursive;
+    font-size: 32px;
+    font-style: italic;
+}
+
+#nospains > .center > img[src="assets/image3.jpg"] {
+    height: 360px;
+}
+
+.nospains_description {
+    margin: 10px 7vw 60px;
+    text-align: center;
+    line-height: 2em;
+    max-width: 450px;
+}
+
+@media screen and (min-width: 400px) {
+    .green_square_button {
+        padding: 24px 56px;
+        font-size: 34px;
+        padding: 24px 56px;
+    }
+
+    .nospains_description {
+        margin: 10px 85px 60px;
+    }
+}
+
+
+
+@media screen and (min-width: 768px)
+{
+    #nospains > .center > img[src="assets/image3.jpg"] {
+        height: 466px;
+    }
+}
+
+
+@media screen and (min-width: 992px)
+{
+    #nospains #img4 {
+        height: 414px;
+    }
+
+    .nospains_groupe_container
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nospains_groupe2
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+
+
+
+
+
+
