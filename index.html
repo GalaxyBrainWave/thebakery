@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!-- 
+
+            J'ai inspecté ton code et mon verdict est clair:
+            ça ne fonctionne que quand j'en ai envie 
+
+                  _..__
+                .' I   '.
+                |.-"""-.|
+               _;.-"""-.;_
+           _.-' _..-.-.._ '-._
+          ';--.-(_o_I_o_)-.--;'
+           `. | |  | |  | | .`
+             `-\|  | |  |/-'
+                |  | |  |
+                |  \_/  |
+             _.'; ._._. ;'._
+        _.-'`; | \  -  / | ;'-.
+      .' :  /  |  |   |  |  \  '.
+     /   : /__ \  \___/  / __\ : `.
+    /    |   /  '._/_\_.'  \   :   `\
+   /     .  `---;"""""'-----`  .     \
+  /      |      |()    ()      |      \
+ /      /|      |              |\      \
+/      / |      |()    ()      | \      \
+|         |
+\     \   |][     |   |    ][ |   /     /
+ \     \ ;=""====='"""'====""==; /     /
+  |/`\  \/      |()    ()      \/  /`\|
+   |_/.-';      |              |`-.\_|
+     /   |      ;              :   \
+     |__.|      |              |.__|
+         ;      |              | 
+         |      :              ;
+         |      :              |
+         ;      |              |
+         ;      |              ;
+         |      :              |
+         |      |              ;
+         |      |              ;
+         '-._   ;           _.-'
+             `;"--.....--";`
+              |    | |    |
+              |    | |    |
+              |    | |    |
+              T----T T----T
+         _..._L____J L____J _..._
+       .` "-. `%   | |    %` .-" `.
+      /      \    .: :.     /      \
+      '-..___|_..=:` `-:=.._|___..-'
+
+
+ -->
+
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&family=Open+Sans:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
+    
+    <!-- importation de la librairie font awesome -->
+    <script src="https://kit.fontawesome.com/564620c46c.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>The Bakery</title>
+</head>
+
+
+
+
+<body>
+
+<!-- Cette partie contient le header, le logo et le menu de navigation tout en 
+haut de la page -->
+
+    <header id="header">
+        <img src="assets/Logo.png" height="180" alt="logo">
+        <nav role="navigation">
+            <div id="menuToggle">
+
+                <!--A fake / hidden checkbox is used as click reciever, 
+                    to use the :checked selector on it.-->
+                <input type="checkbox" />
+
+                <i class="fa-solid fa-bars fa-xl burger_icon"></i>
+            
+                <ul id="menu">
+                    <li><a href="#top">Accueil</a></li>
+                    <li><a href="#apropos">A propos de</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+<!-- Il s'agit de la partie "héro" juste en-dessous du header
+RDV dans le CSS pour une explication du positionnement -->
+
+
+    <main>
+        <section id="hero">
+            <div class="hero_banner">
+                <div class="infogen">
+                    <h1>The Bakery</h1>
+                    <p>Une boulangerie différente, atypique, installée
+                        à Avignon intramuros, et depuis peu également
+                        au Canada et au Japon.
+                    </p>
+                    <p>
+                        Cette boulangerie c'est aussi le rêve un peu fou
+                        d'un ancien formateur devenu boulanger, le rêve d'un
+                        homme qui avait envie de retrouver le pain d'autrefois,
+                        ce pain qui a du goût et qui fait du bien !
+                    </p>
+                    <div class="center">
+                        <a href="#apropos" class="green_round_button enavant">
+                            En savoir plus
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- <img class="hero_img cover" src="assets/image1.jpg" alt="Une personne prend des notes à côté d'une planche qui porte trois croissants"> -->
+           
+
+        </section>
+
+<!-- à partir d'ici c'est la section avec les 4 cartes  -->
+
+
+        <section id="marketingcards">
+
+            <div class="marketingcard_instance_container">
+                <div id="test">
+                    <div class="groupBy2">
+                        <div class="marketingcard_instance">
+                            <div class="marketingcard_header">
+                                <div class="center">
+                                    <div class="green_circle">
+                                        <img src="assets/icons/donut.png" alt="icone de donut" class="marketingcard_icon" id="marketingcard_icon1">
+                                    </div>
+                                </div>
+        
+                            </div>
+                            <h4>Patisserie</h4>
+                            <p>
+                                Un large choix de tartes gourmandes et variées&nbsp;: tartes aux fraises,
+                                framboises, pomme, citron meringuée &#8230;
+                            </p>
+                        </div>
+        
+                        <div class="marketingcard_instance">
+                            <div class="marketingcard_header">
+                                <div class="center">
+                                    <div class="green_circle">
+                                        <img src="assets/icons/bread.png" alt="icone de baguettes" class="marketingcard_icon" id="marketingcard_icon2">
+                                    </div>
+                                </div>
+        
+                            </div>
+                            <h4>Pain</h4>
+                            <p>
+                                L'incontournable baguette The Bakery et une large gamme de pains
+                                spéciaux pétris, façonnés et cuits sur place par nos boulangers&nbsp;!
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="groupBy2">
+                        <div class="marketingcard_instance">
+                            <div class="marketingcard_header">
+                                <div class="center">
+                                    <div class="green_circle">
+                                        <img src="assets/icons/organic.png" alt="icone bio" class="marketingcard_icon" id="marketingcard_icon3">
+                                    </div>
+                                </div>
+        
+                            </div>
+                            <h4>Produit</h4>
+                            <p>
+                                Des salades, des quiche, des tartines, toutes préparées "maison" pour
+                                varier les plaisirs.
+                            </p>
+                        </div>
+        
+                        <div class="marketingcard_instance">
+                            <div class="marketingcard_header">
+                                <div class="center">
+                                    <div class="green_circle">
+                                        <img src="assets/icons/team.png" alt="icone équipe" class="marketingcard_icon" id="marketingcard_icon4">
+                                    </div>
+                                </div>
+                            </div>
+                            <h4>Team</h4>
+                            <p>
+                                Une équipe passionnée et expérimentée à votre service au quotidien
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            
+            </div>
+        </section>
+
+<!-- ici commence la section "nos pains 100% bio" -->
+
+
+        <section id="nospains">
+            <div class="nospains_green">
+
+            </div>
+            <div class="nospains_groupe_container">
+                <div class="nospains_groupe1">
+                    <div class="nospains_card">
+                        <img src="assets/image2.jpg" alt="des mains pétrissent la pâte">
+                        <p>
+                            Chez The Bakery, on prend son temps et surtout on laisse
+                            à la pâte le temps de lever et de développer tous ses
+                            arômes afin de vous procurer un maximum de plaisir et le 
+                            goût retrouvé du pain d'autrefois.
+                        </p>
+                    </div>
+                    <div class="center">
+                        <img src="assets/image4.jpg" alt="deux mains coupent une baguette" id="img4">
+                    </div>
+                </div>
+    
+                <div class="nospains_groupe2">
+       
+                    <div class="center">
+                        <a href="#painsproduits" class="green_square_button">
+                            Nos pains 100% bio
+                        </a>
+                    </div>
+                    <div>
+                        <div class="center">
+                            <img src="assets/image3.jpg" alt="un boulanger pose avec un pain" id="img3">
+                        </div>
+                        <div class="center">
+                            <p class="nospains_description">
+                                L'équipe de The Bakery ont à coeur de transmettre à travers leurs
+                                pains la passion incarnée de leur métier. Leur vocation est
+                                simple&nbsp;: proposer un produit qualitatif, nourissant et de 
+                                bonne conservation.
+                            </p>
+                        </div>
+            
+                        <div class="center">
+                            <a href="#produitsphares" class="green_round_button enavant">
+                                Voir nos produits
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </section>
+
+<!-- ici commence la section à propos: nos produits locaux  -->
+
+        <section id="apropos">
+            <div class="center2">
+                <div class="apropos_groupe1">
+                    
+                    <h3>A propos de Bakery</h3>
+                    <h2>Nos produits locaux</h2>
+                    <div class="center">
+                        <p>
+                            Les avantages supplémentaires de notre boulangerie sont des prix
+                            abordables pour les clients, l'utilisation de farine 100% 
+                            française pour la fabrication des produits et la certification
+                            officielle selon les normes européennes, nous permettant l'utilisation
+                            du label officiel de l'agriculture biologique "AB".
+                        </p>
+                    </div>
+    
+                    <div class="center">
+                        <a href="#produitsphares" class="green_round_button enavant">
+                            En savoir plus
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="apropos_groupe2">
+                    <div class="positional_container">
+                        <div class="center">
+                            <div class="grandisc">
+                                <div class="petidisc">
+                                    <div class="green_circle2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+<!-- ici commence la section nos petites douceurs  -->
+
+
+        <section id="produitsphares">
+            <h2>
+                Nos petites douceurs
+            </h2>
+            <div class="cookiecard-container">
+                <div class="cookiecard">
+                    <h6>Cookies</h6>
+                    <ul>
+                        <li>Caramel</li>
+                        <li>Pépites de chocolat</li>
+                        <li>Avoine</li>
+                        <li>Barre d'avoine et gingembre</li>
+                        <li>Spécialités saisonnières</li>
+                    </ul>
+                </div>
+
+                <div class="cookiecard">
+                    <h6>Scones</h6>
+                    <ul>
+                        <li>Scone au beurre classique</li>
+                        <li>Scones aux fruits frais</li>
+                        <li>Scones faits maison</li>
+                    </ul>
+                </div>
+
+                <div class="cookiecard">
+                    <h6>Autres</h6>
+                    <ul>
+                        <li>Galettes de saison</li>
+                        <li>Tartelettes</li>
+                        <li>Muffins</li>
+                        <li>Brioches</li>
+                        <li>Granola aux canneberges</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+
+<!-- ici commence la section avec les prix de certains pains  -->
+
+        <section id="painsproduits">
+            <div class="center">
+                <p class="misenavant">
+                    Nous préparons chaque jour du pain, des pâtisseries et
+                    des gâteaux frais et faits à la main
+                </p>
+            </div>
+
+            <div class="article_container">
+                <article class="article_top">
+                    <div>
+                        <h5>
+                            Pain aux céréales
+                        </h5>
+                        <div class="center">
+                            <p class="tagline">
+                                Céréales et graines bio
+                            </p>
+                        </div>
+                        <p class="prix">
+                            2.65 €
+                        </p>
+                    </div>
+    
+                    <div>
+                        <div class="center">
+                            <div class="painpic" id="pain1"></div>
+                        </div>
+                    </div>
+                </article>
+    
+                <article class="article_top">
+                    <div>
+                        <h5>
+                            Baguette
+                        </h5>
+                        <div class="center">
+                            <p class="tagline">
+                                Baguette au levain en petite quantité
+                            </p>
+                        </div>
+                        <p class="prix">
+                            1.60 €
+                        </p>
+
+                    </div>
+
+                    <div>
+                        <div class="center">
+                            <div class="painpic" id="pain2"></div>
+                        </div>
+                    </div>
+                </article>
+
+            
+
+                <article class="article_bot">
+                    <div>
+                        <h5>
+                            Pain complet
+                        </h5>
+                        <div class="center">
+                            <p class="tagline">
+                                Seigle au levain à fermentation lente
+                            </p>
+                        </div>
+
+                        <p class="prix">
+                            2.65 €
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="center">
+                            <div class="painpic" id="pain3"></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article_bot">
+                    <div>
+                        <h5>
+                            Pain rond
+                        </h5>
+                        <div class="center">
+                            <p class="tagline">
+                                Fabriqué avec 100% de farine de grains entiers et riche en fibres.
+                            </p>
+                        </div>
+                        <p class="prix">
+                            2.90 €
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="center">
+                            <div class="painpic" id="pain4"></div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+<!-- ici commence la section "pain et bagels"  -->
+
+        <section id="quotecard">
+            <div class="contenu">
+                <h2>
+                    Pain and Bagels
+                </h2>
+                <div class="center">
+                    <blockquote>
+                        "Nous pensons que l'équilibre du quotidien prend sa part fans la qualité
+                        d'un bon pain, nous prenons chaque jour à notre charge de vous en offrir 
+                        le meilleur&hellip;"
+                    </blockquote>
+                </div>
+                <p>Jamal Yousfi</p>
+                <div class="center">
+                    <a href="#apropos" class="green_round_button enavant">
+                        En savoir plus
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+<!-- ici commence la section "contactez-nous"  -->
+
+        <section id="contact">
+            <h2>
+                Contactez nous
+            </h2>
+            <p>Au plaisir de vous répondre</p>
+            <div class="center" id="hautdimage">
+                <div class="roundimage">
+                    <div class="secondaryround">
+                        <div class="tertiaryround"></div>
+                    </div>
+                </div>
+            </div>
+
+            <form action="handlethisform.php" method="post" id="form">
+                <div class="form_container">
+                    <div class="nom_email">
+                        <div>
+                            <label for="email">Email</label>
+                            <br><br>
+                            <input class="inputstyle" type="email" id="email" name="email" placeholder="votre adresse email valide">
+                        </div>
+    
+                        <div>
+                            <label for="nom">Nom</label>
+                            <br><br>
+                            <input class="inputstyle" type="text" id="nom" name="nom" placeholder="votre nom">
+                        </div>
+                    </div>
+            
+                    <div class="center">
+                        <input type="submit" value="Envoyer">
+                    </div>
+                </div>
+                
+            </form>
+
+        </section>
+    </main>
+
+
+    <!-- ici commence ce que je considère être comme le footer  -->
+
+    <footer>
+        <div id="adresses">
+
+            <article>
+                <p class="ville">
+                    Avignon
+                </p>
+    
+                <p class="adresse">
+                    82 route de Montfavet
+                    <br>
+                    84 000 Avignon
+                </p>
+            </article>
+
+            <article>
+                <p class="ville">
+                    Tokyo
+                </p>
+    
+                <p class="adresse">
+                    3-chome-38-1 Shinkuju, Shinkuju City,
+                    <br>
+                    Tokyo 160-0022, Japon
+                </p>
+            </article>
+
+            <article>
+                <p class="ville">
+                    Montréal
+                </p>
+    
+                <p class="adresse">
+                    5134 Boulevard St-Laurent, Montreal,
+                    <br>
+                    Quebec H2T 1R8 Canada
+                </p>
+            </article>
+
+                
+        </div>
+
+        <div id="social">
+            <div class="center">
+                <div class="social_icons">
+                    <svg fill="#2cccc4" width="58px" height="58px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g > <path d="M12 2.03998C6.5 2.03998 2 6.52998 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.84998C10.44 7.33998 11.93 5.95998 14.22 5.95998C15.31 5.95998 16.45 6.14998 16.45 6.14998V8.61998H15.19C13.95 8.61998 13.56 9.38998 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C15.9164 21.5878 18.0622 20.3855 19.6099 18.57C21.1576 16.7546 22.0054 14.4456 22 12.06C22 6.52998 17.5 2.03998 12 2.03998Z"></path> </g></svg>
+                    <svg height="48px" width="48px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#2cccc4" stroke="#2cccc4"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g > <style type="text/css"> .st0{fill:#2cccc4;} </style> <g> <path class="st0" d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M260.926,217.391 c0.084,0.004,0.164,0.021,0.25,0.025c-0.875-3.752-1.328-7.664-1.328-11.682c0-28.307,22.951-51.258,51.262-51.258 c14.742,0,28.063,6.225,37.414,16.188c9.6-1.89,18.684-5.174,27.129-9.523c1.781-0.864,3.566-1.723,5.32-2.674 c-3.039,9.334-8.744,17.412-16.141,23.532c-2.004,1.576-4.062,3.098-6.326,4.344c0.154-0.018,0.304-0.052,0.457-0.071 c-0.15,0.093-0.275,0.22-0.428,0.312c8.402-1.005,16.459-3.051,24.111-5.942c1.715-0.592,3.428-1.191,5.127-1.852 c-6.842,10.159-15.453,19.095-25.375,26.259c0.098,2.197,0.148,4.406,0.148,6.631c0,67.736-51.558,145.842-145.844,145.842 c-28.947,0-55.891-8.484-78.576-23.028c4.01,0.473,8.092,0.715,12.229,0.715c19.136,0,37.014-5.269,52.383-14.34 c3.871-2.23,7.658-4.639,11.273-7.365c-0.098-0.002-0.187-0.026-0.285-0.028c0.094-0.073,0.196-0.136,0.289-0.209 c-19.422-0.358-36.184-11.539-44.574-27.747c-1.25-2.489-2.32-5.096-3.164-7.831c3.086,0.58,6.246,0.898,9.5,0.898 c3.391,0,6.666-0.436,9.871-1.063c1.197-0.168,2.406-0.308,3.586-0.502c-0.156-0.032-0.293-0.1-0.449-0.133 c0.162-0.042,0.336-0.056,0.496-0.1c-23.449-4.709-41.119-25.428-41.119-50.262c0-0.196,0.002-0.387,0.004-0.58l0.024-0.055 c5.521,3.064,11.693,5.092,18.23,5.94c1.609,0.269,3.221,0.516,4.832,0.657c-0.11-0.074-0.205-0.164-0.314-0.238 c0.152,0.006,0.297,0.036,0.447,0.041c-13.754-9.191-22.803-24.883-22.803-42.666c0-8.142,1.988-15.787,5.367-22.623 c0.539-1.028,1.018-2.078,1.637-3.074c22.711,27.822,55.516,46.971,92.801,52.15c4.16,0.605,8.332,1.144,12.553,1.388 C260.934,217.443,260.932,217.416,260.926,217.391z"></path> </g> </g></svg>
+                    <svg width="48px" height="48px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#2cccc4"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g > <g fill="none" fill-rule="evenodd"> <path d="m0 0h32v32h-32z"></path> <path d="m17.0830929.03277248c8.1190907 0 14.7619831 6.64289236 14.7619831 14.76198302v2.3064326c0 8.1190906-6.6429288 14.761983-14.7619831 14.761983h-2.3064325c-8.11909069 0-14.76198306-6.6428924-14.76198306-14.761983v-2.3064326c0-8.11909066 6.64289237-14.76198302 14.76198306-14.76198302zm-.8630324 8.0002641-.2053832-.0002641c-1.7102378 0-3.4204757.05652851-3.4204757.05652851-2.4979736 0-4.52299562 2.02501761-4.52299562 4.52298561 0 0-.05191606 1.4685349-.05624239 3.0447858l-.00028625.2060969c0 1.7648596.05652864 3.590089.05652864 3.5900891 0 2.497968 2.02502202 4.5229856 4.52299562 4.5229856 0 0 1.5990132.0565285 3.2508899.0565285 1.7648634 0 3.6466255-.0565285 3.6466255-.0565285 2.4979736 0 4.4664317-1.9684539 4.4664317-4.4664219 0 0 .0565286-1.8046833.0565286-3.5335605l-.0010281-.4057303c-.0076601-1.5511586-.0555357-3.0148084-.0555357-3.0148084 0-2.4979681-1.9684582-4.46642191-4.4664317-4.46642191 0 0-1.6282521-.05209668-3.2716213-.05626441zm-.2053831 1.43969747c1.4024317 0 3.2005639.04637875 3.2005638.04637875 2.0483524 0 3.3130573 1.2647021 3.3130573 3.31305 0 0 .0463789 1.7674322.0463789 3.1541781 0 1.4176885-.0463789 3.2469355-.0463789 3.2469355 0 2.048348-1.2647049 3.31305-3.3130573 3.31305 0 0-1.5901757.0389711-2.9699093.0454662l-.3697206.0009126c-1.3545375 0-3.0049692-.0463788-3.0049692-.0463788-2.0483172 0-3.36958592-1.321301-3.36958592-3.3695785 0 0-.04637885-1.8359078-.04637885-3.2830941 0-1.3545344.04637885-3.061491.04637885-3.061491 0-2.0483479 1.32130402-3.31305 3.36958592-3.31305 0 0 1.7416035-.04637875 3.1440353-.04637875zm-.0000353 2.46195055c-2.2632951 0-4.0980441 1.8347448-4.0980441 4.098035s1.8347489 4.098035 4.0980441 4.098035 4.0980441-1.8347448 4.0980441-4.098035c0-2.2632901-1.8347489-4.098035-4.0980441-4.098035zm0 1.4313625c1.4727754 0 2.6666784 1.1939004 2.6666784 2.6666725s-1.193903 2.6666726-2.6666784 2.6666726c-1.4727401 0-2.6666784-1.1939005-2.6666784-2.6666726s1.1939031-2.6666725 2.6666784-2.6666725zm4.2941322-2.5685935c-.5468547 0-.9902027.4455321-.9902027.9950991 0 .5495671.443348.9950639.9902027.9950639.5468546 0 .9901674-.4454968.9901674-.9950639 0-.5496023-.4433128-.9950991-.9901674-.9950991z" fill="#2cccc4" fill-rule="nonzero"></path> </g> </g></svg>
+                    <svg fill="#2cccc4" height="48px" width="48px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-143 145 512 512" xml:space="preserve"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g > <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M41.4,508.1H-8.5V348.4h49.9 V508.1z M15.1,328.4h-0.4c-18.1,0-29.8-12.2-29.8-27.7c0-15.8,12.1-27.7,30.5-27.7c18.4,0,29.7,11.9,30.1,27.7 C45.6,316.1,33.9,328.4,15.1,328.4z M241,508.1h-56.6v-82.6c0-21.6-8.8-36.4-28.3-36.4c-14.9,0-23.2,10-27,19.6 c-1.4,3.4-1.2,8.2-1.2,13.1v86.3H71.8c0,0,0.7-146.4,0-159.7h56.1v25.1c3.3-11,21.2-26.6,49.8-26.6c35.5,0,63.3,23,63.3,72.4V508.1z "></path> </g></svg>
+                    <svg fill="#2cccc4" width="58px" height="58px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g ><path d="M11.99 2C6.472 2 2 6.473 2 11.99c0 4.232 2.633 7.85 6.35 9.306-.088-.79-.166-2.006.034-2.868.182-.78 1.172-4.966 1.172-4.966s-.299-.599-.299-1.484c0-1.388.805-2.425 1.808-2.425.853 0 1.264.64 1.264 1.407 0 .858-.546 2.139-.827 3.327-.235.994.499 1.805 1.479 1.805 1.775 0 3.141-1.872 3.141-4.575 0-2.392-1.719-4.064-4.173-4.064-2.843 0-4.512 2.132-4.512 4.335 0 .858.331 1.779.744 2.28a.3.3 0 0 1 .069.286c-.076.315-.245.994-.277 1.133-.044.183-.145.222-.335.134-1.247-.581-2.027-2.405-2.027-3.871 0-3.151 2.289-6.045 6.601-6.045 3.466 0 6.159 2.469 6.159 5.77 0 3.444-2.171 6.213-5.184 6.213-1.013 0-1.964-.525-2.29-1.146l-.623 2.374c-.225.868-.834 1.956-1.241 2.62a10 10 0 0 0 2.958.445c5.517 0 9.99-4.473 9.99-9.99S17.507 2 11.99 2"></path></g></svg>
+                </div>
+            </div>
+
+            <div id="suiveznous">
+                <h2>
+                    Suivez nous !
+                </h2>
+                <p>
+                    Ne manquez aucune info de The Bakery
+                </p>
+            </div>
+        </div>
+
+        <div id="bottom">
+            <div class="center">
+                <img src="assets/Logo.png" alt="logo">
+                <p>
+                    Mentions légales
+                </p>
+                <p>
+                    Politique de confidentialité
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
